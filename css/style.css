@@ -1,0 +1,411 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: #0b0c17;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  margin: 25px 0 0 85px;
+  padding: 0px;
+}
+
+h3 {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h4 {
+  margin: 25px 0 0 0;
+}
+
+h5 {
+  color: #dddddd;
+  font-size: 50px;
+  margin: 0 0 50px 0;
+}
+
+p {
+  line-height: 35px;
+  font-weight: 400;
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.full-width {
+  max-width: 100%;
+}
+
+/*from here, Nav/Logo*/
+
+nav {
+  position: absolute;
+}
+
+nav img {
+  max-width: 50px;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
+nav p {
+  margin: 0 0 0 85px;
+}
+
+/*From here, Header*/
+
+/*Header Photo*/
+
+header {
+  height: 100vh;
+  margin-bottom: 150px;
+}
+
+.top {
+  display: flex;
+}
+
+.header-photo {
+  position: relative;
+  max-width: 60%;
+}
+
+.header-photo :first-child {
+  max-width: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 0;
+  animation: bounce 20s ease-in-out infinite;
+}
+
+/*Header Text*/
+
+.header-text {
+  margin: 300px 0 0 100px;
+}
+
+.header-text p {
+  margin-bottom: 150px;
+}
+
+.header-text span img {
+  height: 20px;
+}
+
+.header-text span {
+  color: #ff3571;
+}
+
+/*From here, My Projects*/
+
+.projects-photo {
+  margin-bottom: 120px;
+}
+
+/*From here, Every idea*/
+
+.every-idea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.every-idea h3 {
+  min-width: 30%;
+}
+
+.every-idea span img {
+  height: 44px;
+}
+
+.every-idea p {
+  padding: 0 100px 0 50px;
+}
+
+/*From here, after-several*/
+
+.after-several {
+  max-width: 60%;
+  margin-bottom: 100px;
+}
+
+/*From here, skills with small icon*/
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 100px;
+}
+
+.skills article {
+  max-width: 80%;
+}
+
+.skills img {
+  max-width: 25px;
+  margin-right: 10px;
+}
+
+.skills p {
+  margin-left: 40px;
+}
+
+.iconjump {
+  animation: Jump 1.5s ease-in-out infinite;
+}
+
+/*From here, Are you Ready*/
+
+.headline {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.headline p {
+  font-size: 22px;
+}
+
+/*From here, Are you Ready photos*/
+
+.are-you-ready article {
+  display: flex;
+}
+
+.are-you-ready div {
+  margin: 45px;
+}
+
+.are-you-ready {
+  margin-bottom: 100px;
+}
+
+/*From here, Do you like this challenge*/
+
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.end h3 {
+  margin-bottom: 20px;
+}
+
+.end p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.end input {
+  display: block;
+  height: 4rem;
+  width: 45%;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.end a {
+  background-color: #ff3571;
+  color: #fff;
+  padding: 15px 60px;
+  text-decoration-line: none;
+  font-size: 16px;
+  margin-bottom: 100px;
+  animation: shake 0s ease-in-out infinite;
+  animation: shake01 1s ease-in-out infinite;
+}
+
+/*From here, Footer*/
+
+footer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer span img {
+  height: 20px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+/*Animation Header Space*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px) scale(0.1) rotate(360deg) translateY(-50%);
+  }
+
+  100% {
+    transform: scale(0.1);
+  }
+}
+
+@keyframes shake01 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(3deg);
+  }
+
+  66% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes Jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/*Hover*/
+
+.end a:hover {
+  background: linear-gradient(to right, #ff3571, #3c30ff);
+}
+
+/*From here, Media Queries*/
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+    margin: auto;
+  }
+
+  h1,
+  h3,
+  p {
+    padding: 0 25px;
+  }
+
+  /*Header and Nav*/
+
+  nav img {
+    position: absolute;
+  }
+
+  nav p {
+    padding: 2px;
+    text-align: left;
+  }
+
+  .header-photo {
+    display: none;
+  }
+
+  header {
+    
+    height: 100vh;
+  }
+
+  .header-text h1 {
+    margin-bottom: 50px;
+  }
+
+  .header-text {
+    margin: 200px 0 0 0;
+  }
+
+  .header-text p {
+    margin-bottom: 50px;
+  }
+
+  /* Main section */
+
+  .every-idea,
+  .after-several {
+    display: inline;
+  }
+
+  .every-idea p {
+    margin-bottom: 100px;
+    padding: 0 25px;
+  }
+
+  .after-several h3 {
+    margin-bottom: 50px;
+  }
+
+  /*Start here with "skills"*/
+
+  .skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+  }
+
+  .skills h4,
+  .skills p {
+    margin: 25 0;
+  }
+
+  .skills p {
+    margin-left: 0;
+  }
+
+  /*From here Illustation with text*/
+
+  .are-you-ready article {
+    display: inline;
+  }
+
+  .big-photo {
+    display: none;
+  }
+
+  /*From here "Do you like this challenge?"*/
+
+  .end {
+    text-align: center;
+  }
+
+  .end input {
+    width: 80%;
+  }
+
+  .end a {
+    margin-bottom: 50px;
+  }
+}
